@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         key = findViewById(R.id.key);
     }
 
-    public void onClick(View view) {
+    public void onClickShifr(View view) {
         char[] inputChar = input.getText().toString().toCharArray();
         char[] keyChar = key.getText().toString().toCharArray();
         String out = shifr(inputChar, keyChar);

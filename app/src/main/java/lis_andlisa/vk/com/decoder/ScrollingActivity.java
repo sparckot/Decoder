@@ -24,9 +24,11 @@ public class ScrollingActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrolling);
 
+        //получаем элемент окна вывода
         output = findViewById(R.id.output);
         Intent intent = getIntent();
-        output.setText(intent.getStringExtra("key"));
+        //записываем в окно вывода текст, поллученный из предыдущей активности
+        output.setText(intent.getStringExtra("input"));
     }
 
     public void onClick(View view) {
